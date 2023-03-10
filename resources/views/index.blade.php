@@ -9,7 +9,11 @@
 </head>
 <body>
     <div id="app">
+        <nav></nav>
+        <nav2></nav2>
+        <header></header>
         <test></test>
+        <test2></test2>
         <example-component></example-component>
     </div>
     <script src="./js/app.js" ></script>

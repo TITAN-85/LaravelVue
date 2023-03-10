@@ -1,18 +1,17 @@
 <template>
     <div>
         <h2>
-            Hello, test component Ola 222
+            I'm a button a component header
         </h2>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Test"
+    name: "Header"
 }
 </script>
 
 <style scoped>
 
 </style>
-

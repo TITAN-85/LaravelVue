@@ -1,18 +1,15 @@
 <template>
     <div>
-        <h2>
-            Hello, test component Ola 222
-        </h2>
+        <h2>Nav2</h2>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Test"
+    name: "Nav2"
 }
 </script>
 
 <style scoped>
 
 </style>
-

@@ -21,6 +21,10 @@ window.Vue = require('vue').default;
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('test', require('./components/Test.vue').default);
+Vue.component('test2', require('./components/Test2.vue').default);
+Vue.component('header', require('./components/Header.vue').default);
+Vue.component('nav', require('./components/layouts/NavComponent.vue').default);
+Vue.component('nav', require('./components/Nav2.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
