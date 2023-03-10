@@ -16,19 +16,24 @@ use App\Http\Controllers\CellierController;
 |
 */
 
-Route::get('', [CustomAuthController::class, 'welcome']);
-Route::get('/', [CustomAuthController::class, 'welcome'])->name('welcome');
-Route::get('/welcome', [CustomAuthController::class, 'welcome']);
+Route::get('/', function () {
+    return view('index');
+});
+
+
+//Route::get('', [CustomAuthController::class, 'welcome']);
+//Route::get('/', [CustomAuthController::class, 'welcome'])->name('welcome');
+//Route::get('/welcome', [CustomAuthController::class, 'welcome']);
 
 
 
 
 //============================================= CUSTOMAUTHCONTROLLER================================================\\
-Route::get('login', [CustomAuthController::class, 'index'])->name('login');
-Route::post('login', [CustomAuthController::class, 'authentication'])->name('user.auth');
-Route::get('signup', [CustomAuthController::class, 'create'])->name('user.create');
-Route::post('signup-store', [CustomAuthController::class, 'store'])->name('user.store');
-Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
+//Route::get('login', [CustomAuthController::class, 'index'])->name('login');
+//Route::post('login', [CustomAuthController::class, 'authentication'])->name('user.auth');
+//Route::get('signup', [CustomAuthController::class, 'create'])->name('user.create');
+//Route::post('signup-store', [CustomAuthController::class, 'store'])->name('user.store');
+//Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
 
 // //================CELLIER================//
@@ -39,17 +44,17 @@ Route::get('logout', [CustomAuthController::class, 'logout'])->name('logout');
 
 
 
-Route::get('liste-example', function () {
-    return view('liste');
-});
+//Route::get('liste-example', function () {
+//    return view('liste');
+//});
 
 
 
 
 //============================================= CELLIERCONTROLLER ===================================================\\
-Route::get('liste',  [CellierController::class, 'index'])->name('liste');
-Route::get('detail', [CellierController::class, 'show'])->name('detail');
-Route::get('show', [CellierController::class , 'show'])->name('show');
+//Route::get('liste',  [CellierController::class, 'index'])->name('liste');
+//Route::get('detail', [CellierController::class, 'show'])->name('detail');
+//Route::get('show', [CellierController::class , 'show'])->name('show');
 
 
 
@@ -57,4 +62,7 @@ Route::get('show', [CellierController::class , 'show'])->name('show');
 
 
 //============================================= CELLIERCONTROLLER ===================================================\\
-Route::get('catalogue', [CatalogueController::class, 'index'])->name('catalogue');
+//Route::get('catalogue', [CatalogueController::class, 'index'])->name('catalogue');
+//Auth::routes();
+//
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
