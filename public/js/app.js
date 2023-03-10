@@ -5493,9 +5493,9 @@ window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js
 Vue.component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
 Vue.component('test', (__webpack_require__(/*! ./components/Test.vue */ "./resources/js/components/Test.vue")["default"]));
 Vue.component('test2', (__webpack_require__(/*! ./components/Test2.vue */ "./resources/js/components/Test2.vue")["default"]));
-Vue.component('header', (__webpack_require__(/*! ./components/Header.vue */ "./resources/js/components/Header.vue")["default"]));
+Vue.component('headerComp', (__webpack_require__(/*! ./components/Header.vue */ "./resources/js/components/Header.vue")["default"]));
 Vue.component('nav', (__webpack_require__(/*! ./components/layouts/NavComponent.vue */ "./resources/js/components/layouts/NavComponent.vue")["default"]));
-Vue.component('nav', (__webpack_require__(/*! ./components/Nav2.vue */ "./resources/js/components/Nav2.vue")["default"]));
+Vue.component('nav2', (__webpack_require__(/*! ./components/Nav2.vue */ "./resources/js/components/Nav2.vue")["default"]));
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -11,7 +11,7 @@
     <div id="app">
         <nav></nav>
         <nav2></nav2>
-        <header></header>
+        <headerComp></headerComp>
         <test></test>
         <test2></test2>
         <example-component></example-component>
