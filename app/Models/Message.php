@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Cellier extends Model
+class Message extends Model
 {
-    protected $table = "vino__cellier";
-
     use HasFactory;
 
-    protected $fillable = [
+    protected $fillable = ['message'];
 
-        'cellier_user_id',
+    public function user()
+    {
+    return $this->belongsTo(User::class);
+    }
 
-    ];
+
 }

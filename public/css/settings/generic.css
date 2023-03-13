@@ -56,12 +56,11 @@ p {
 
 a {
     text-decoration: none;
-    color: white;
     font-size: 16px;
 }
 
 a:link {
-    color: var(--primary-color);
+    color: var(--color-dark);
 }
 
 a:visited {

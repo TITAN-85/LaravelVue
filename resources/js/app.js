@@ -20,12 +20,9 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('test', require('./components/Test.vue').default);
-Vue.component('test2', require('./components/Test2.vue').default);
-Vue.component('headerComp', require('./components/Header.vue').default);
-Vue.component('nav', require('./components/layouts/NavComponent.vue').default);
-Vue.component('nav2', require('./components/Nav2.vue').default);
+Vue.component('header-layout', require('./components/layouts/Header.vue').default);
 
+import "../../public/css/style.css";
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -1,34 +1,52 @@
 .catalogue-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 10%;
     font-family:  var(--font-primary);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left:  var(--margin-small);
+    margin-right: var(--margin-small);
+
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: 16px;    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
 }
+
 .catalogue-image {
     flex: 1;
     max-width: 100%;
-    margin-right: 10px;
-    height: 65vh;
+    margin-right: var(--margin-small);
+    margin-top: var(--margin-small);
+    
 }
+
 .catalogue-image img {
-    background-color:  var(--primary-color);
-    /* width: inherit;
-    height:inherit; */
+    object-fit: cover;
+    width: 200px;
 }
+
 .catalogue-description {
-    flex: 1;
-    max-width: 100%;
-    margin-right: 10px
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 80%;
 }
+
+.catalogue-description>ul{
+
+    margin: 10px;
+}
+
 .catalogue-description h1 {
     font-size: 24px;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: var(--margin-small);
     color: var(--accent-color);
     font-weight: 800;
 }
@@ -38,12 +56,12 @@
     padding: 0;
 }
 .catalogue-description .sous-titre{
- font-size: 24px;
+   font-size: 24px;
 }
 .catalogue-description li {
     font-size: 16px;
     line-height: 1;
-    margin-bottom: 10px;
+    margin-bottom: var(--margin-small);
 }
 .li-divider::after {
     content: "";
@@ -61,8 +79,39 @@ strong{
     font-size: 16px;
     padding: 5px 40px;
     border-radius: 5px;
-    
 }
+a.btn{
+    margin: 10px;
+}
+
+.container-submit{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+
+}
+
+.card-header{
+
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+
+
+    background: rgba(255, 255, 255, 0.29);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
+}
+
+.card-header>h3{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
 @media screen and (min-width: 768px){
 .catalogue-description li{
 
@@ -79,10 +128,9 @@ strong{
 }
 .catalogue-image img {
     margin-left: auto;
-    padding-right: 40px;
     margin-right: auto;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 40px;
+    width: auto;
 }
 
 }

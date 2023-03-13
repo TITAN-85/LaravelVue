@@ -15,6 +15,10 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    
+                </div>
+                <div class="card-footer">
+                    <a href="{{route('chat')}}" class="btn btn-secondary btn-ouline">Chat</a>
                 </div>
             </div>
         </div>
