@@ -7,6 +7,27 @@
 require('./bootstrap');
 
 window.Vue = require('vue').default;
+import VueRouter from "vue-router";
+
+Vue.use(VueRouter)
+
+const routes = [
+    { path: '/', component: require('./components/layouts/Header.vue') }
+    // { path: '/home', component: require('./components/layouts/Header.vue') }
+
+]
+
+const router = new VueRouter({
+
+    routes 
+  
+})
+
+const app = new Vue({
+
+    router
+  
+  }).$mount('#app')
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,8 +40,8 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('header-layout', require('./components/layouts/Header.vue').default);
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('header-layout', require('./components/layouts/Header.vue').default);
 
 import "../../public/css/style.css";
 /**
@@ -29,6 +50,6 @@ import "../../public/css/style.css";
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
-});
+// const app = new Vue({
+//     el: '#app',
+// });

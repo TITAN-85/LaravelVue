@@ -11,7 +11,7 @@
     </head>
 
     <body>
-        @php $locale = session()->get('locale'); @endphp
+        <!-- @php $locale = session()->get('locale'); @endphp -->
         <nav class="container-header">
             <div class="site-header">
                 <!---------------- header et icons -------------->
@@ -464,10 +464,24 @@
 
 </template>
 
-<script>
+<!-- <script>
 export default {
     name: "header"
 }
+</script> -->
+
+<script>
+
+    export default {
+
+        mounted() {
+
+            console.log('Component mounted.')
+
+        }
+
+    }
+
 </script>
 
 <style scoped></style>
