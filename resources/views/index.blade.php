@@ -10,9 +10,11 @@
 
 <body>
     <div id="app">
-        Hello i'm index.blade.php
-        <header-layout></header-layout>
-        <example-component></example-component>
+        <!-- <main-nav></main-nav> -->
+        <div>
+            <router-view></router-view>
+        </div>
+        <!-- I am text from index.blade.php -->
     </div>
     <script src="./js/app.js"></script>
 </body>
