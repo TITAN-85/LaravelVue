@@ -5,14 +5,14 @@
 import Header from '../Header.vue';
 
 </script>
-<template>
+<!-- <template>
     
     <Header></Header>
 
-</template>
+</template> -->
 
 <template>
-    
+    <!-- <Header></Header> -->
 
     <main class="container-signup">
 
