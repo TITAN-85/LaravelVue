@@ -1,3 +1,5 @@
+
+
 <template>
     <!DOCTYPE html>
     <html lang="en">
@@ -157,7 +159,7 @@
                         <!-- <span class="username"> {{ $name }} </span> -->
                         <!-- <span class="username"> Name here todo: </span> -->
                         <!-- <a href="{{ route('liste-bouteilles')}}"> -->
-                        <a href="mon-cellier">
+                        <a href="login">
                             <svg width="35pt" height="35pt" version="1.1" viewBox="0 0 600 500"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -454,7 +456,7 @@
 <script>
 export default {
 
-    name: "Index"
+    name: "Header"
 }
 </script>
 

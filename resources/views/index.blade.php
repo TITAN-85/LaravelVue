@@ -10,8 +10,8 @@
 
 <body>
     <div id="app">
-        <!-- <main-nav></main-nav> -->
         <div>
+            <Header></Header>
             <router-view></router-view>
         </div>
         <!-- I am text from index.blade.php -->

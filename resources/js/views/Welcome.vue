@@ -11,7 +11,7 @@
           <!-- <h1 class="accueil-titre">@lang('lang.hello') {{ $name }}</h1>
           <p class="accueil-paragraph">@lang('lang.slogan')</p>
           <button class="accueil-button"><a  href="{{ route('liste-bouteilles')}}">@lang('lang.mes_cellier')</a></button> -->
-          
+        
         </div>
     </div>
 </template>
