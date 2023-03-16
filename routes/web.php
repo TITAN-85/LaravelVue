@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\CellierController;
 use App\Http\Controllers\LocalizationController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +20,14 @@ use App\Http\Controllers\LocalizationController;
 // Route::get('/', function () {
 //     return view('index');
 // });
+
+
+Auth::routes();
+
+Route::get('/', [CustomAuthController::class, 'welcome'])->name('welcome');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+
 
 Route::get('/{any}', function () {
     return view('index');
@@ -93,3 +103,7 @@ Route::get('/{any}', function () {
 
 // Route::get('/catalogue/search', [CatalogueController::class, 'search'])->name('catalogue.search');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
