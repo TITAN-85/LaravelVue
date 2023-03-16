@@ -31670,20 +31670,22 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "accueil-container" }, [
-    _c("div", { staticClass: "accueil-overlay" }, [
-      _c("h1", { staticClass: "accueil-titre" }, [
-        _vm._v("Welcome make text here"),
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "accueil-paragraph" }, [_vm._v("and here")]),
-      _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "accueil-button" },
-        [_c("router-link", { attrs: { to: "/" } }, [_vm._v(" Login ")])],
-        1
-      ),
-    ]),
+    _c(
+      "div",
+      { staticClass: "accueil-overlay" },
+      [
+        _c("h1", { staticClass: "accueil-titre" }, [
+          _vm._v("Welcome make text here"),
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "accueil-paragraph" }, [_vm._v("and here")]),
+        _vm._v(" "),
+        _c("router-link", { attrs: { to: "/" } }, [
+          _c("button", { staticClass: "accueil-button" }, [_vm._v(" Login ")]),
+        ]),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = []

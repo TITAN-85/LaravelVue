@@ -5,7 +5,7 @@
           
           <h1 class="accueil-titre">Welcome make text here</h1>
           <p class="accueil-paragraph">and here</p>
-          <button class="accueil-button"><router-link  to="/"> Login </router-link></button>
+          <router-link  to="/"> <button class="accueil-button"> Login </button> </router-link>
 
 
           <!-- <h1 class="accueil-titre">@lang('lang.hello') {{ $name }}</h1>
