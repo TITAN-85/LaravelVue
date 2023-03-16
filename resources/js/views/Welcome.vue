@@ -4,8 +4,8 @@
 
 
           <h1 class="accueil-titre">Welcome make text here</h1>
-          <p class="accueil-paragraph">and here</p>
-          <router-link  to="/"> <button class="accueil-button"> Login </button> </router-link>
+          <p class="accueil-paragraph">and here2</p>
+          <router-link  to="/cellier"> <button class="accueil-button">Cellier for now. Login later</button> </router-link>
 
 
           <!-- <h1 class="accueil-titre">@lang('lang.hello') {{ $name }}</h1>
@@ -19,7 +19,7 @@
 <script>
 export default {
 
-    name: "Welcome"
+    name: "welcome"
 }
 </script>
 

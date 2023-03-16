@@ -19,7 +19,7 @@
                 <div class="site-header-container">
 
                     <!-- <a href="{{ route('catalogue')}}" > -->
-                    <router-link  to="welcome">
+                    <router-link  to="/">
                         <svg class="logo-vino" width="35pt" height="35pt" version="1.1" viewBox="0 0 600 700"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
@@ -454,10 +454,11 @@
 </template>
 
 <script>
-export default {
-
-    name: "Header"
-}
+    export default {
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
 </script>
 
 <style scoped>

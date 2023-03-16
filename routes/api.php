@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\v1\BouteilleController;
+use App\Http\Controllers\CustomAuthController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,3 +21,4 @@ use App\Http\Controllers\Api\v1\BouteilleController;
 // });
 
 Route::resource('bouteille', BouteilleController::class);
+Route::resource('auth', CustomAuthController::class);

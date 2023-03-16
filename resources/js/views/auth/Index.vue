@@ -1,19 +1,6 @@
 
 
-<script>
-
-import Header from '../Header.vue';
-
-</script>
-<!-- <template>
-    
-    <Header></Header>
-
-</template> -->
-
 <template>
-    <!-- <Header></Header> -->
-
     <main class="container-signup">
 
         <div class="header-form">
@@ -28,19 +15,15 @@ import Header from '../Header.vue';
 
                 <input type="email" placeholder="email" class="email" name="email" value="">
 
-                @if($errors->has('email'))
-                <div class="text-form">
-                    <!-- {{ $errors -> first('email') }} -->
-                </div>
-                @endif
+                <!-- <div v-if="$errors.has('email')" class="text-form"> -->
+                    <!-- {{ $errors.first('email') }} -->
+                <!-- </div> -->
 
                 <input type="password" placeholder="password" class="password" name="password">
 
-                @if($errors->has('password'))
-                <div class="text-form">
-                    <!-- {{ $errors -> first('password') }} -->
-                </div>
-                @endif
+                <!-- <div v-if="$errors.has('password')" class="text-form"> -->
+                    <!-- {{ $errors.first('password') }} -->
+                <!-- </div> -->
 
                 <input type="submit" value="submit" class="submit">
             </form>
@@ -50,9 +33,10 @@ import Header from '../Header.vue';
 
 
 <script>
-export default {
+// import Header from '../Header.vue';
 
-    name: "Welcome"
+export default {
+    name: "login",
 }
 </script>
 
