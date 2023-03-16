@@ -4,22 +4,23 @@ import Vue from 'vue'
 
 Vue.use(VueRouter);
 
-import Index from "./views/Index";
+import Header from "./views/Header";
 import Welcome from "./views/Welcome";
-import MonCellier from "./views/MonCellier";
+import login from "./views/auth/Index";
 
 const routes = [
     {
         path: "/",
-        component: Index
+        component: Header
     },
     {
         path: "/welcome",
         component: Welcome
     },
     {
-        path: "/mon-cellier",
-        component: MonCellier
+        path: "/login",
+        component: Header,
+        component: login
     }
 ]
 
